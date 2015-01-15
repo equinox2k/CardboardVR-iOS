@@ -82,6 +82,11 @@ bool Vector3d::sameValues(Vector3d *other)
     return (this->x == other->x) && (this->y == other->y) && (this->z == other->z);
 }
 
+void Vector3d::add(Vector3d *a, Vector3d *b, Vector3d *result)
+{
+    result->set(a->x + b->x, a->y + b->y, a->z + b->z);
+}
+
 void Vector3d::sub(Vector3d *a, Vector3d *b, Vector3d *result)
 {
     result->set(a->x - b->x, a->y - b->y, a->z - b->z);

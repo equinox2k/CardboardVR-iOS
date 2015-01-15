@@ -10,6 +10,8 @@
 		35B1883D19ABEF58005A9930 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 35B1883C19ABEF58005A9930 /* AppDelegate.mm */; };
 		35B1886119ABF053005A9930 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B1886019ABF053005A9930 /* CoreMotion.framework */; };
 		35B1886319ABF059005A9930 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B1886219ABF059005A9930 /* GLKit.framework */; };
+		35C710081A677F2500C12485 /* GyroBiasEstimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 35C710061A677F2500C12485 /* GyroBiasEstimator.mm */; };
+		35C7100B1A67805400C12485 /* SystemClock.mm in Sources */ = {isa = PBXBuildFile; fileRef = 35C710091A67805400C12485 /* SystemClock.mm */; };
 		BC6733601A5D90C700C6D79B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6733381A5D90C700C6D79B /* main.m */; };
 		BC6733611A5D90C700C6D79B /* CardboardDeviceParams.mm in Sources */ = {isa = PBXBuildFile; fileRef = BC67333B1A5D90C700C6D79B /* CardboardDeviceParams.mm */; };
 		BC6733621A5D90C700C6D79B /* CardboardViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BC67333D1A5D90C700C6D79B /* CardboardViewController.mm */; };
@@ -49,6 +51,10 @@
 		35B1883C19ABEF58005A9930 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		35B1886019ABF053005A9930 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		35B1886219ABF059005A9930 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		35C710061A677F2500C12485 /* GyroBiasEstimator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GyroBiasEstimator.mm; sourceTree = "<group>"; };
+		35C710071A677F2500C12485 /* GyroBiasEstimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GyroBiasEstimator.h; sourceTree = "<group>"; };
+		35C710091A67805400C12485 /* SystemClock.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SystemClock.mm; sourceTree = "<group>"; };
+		35C7100A1A67805400C12485 /* SystemClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemClock.h; sourceTree = "<group>"; };
 		BC4FA72B1A63ECA4008E60E3 /* CardboardSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardboardSDK.h; sourceTree = "<group>"; };
 		BC6733371A5D90C700C6D79B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC6733381A5D90C700C6D79B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -202,6 +208,8 @@
 				BC6733501A5D90C700C6D79B /* HeadTracker.mm */,
 				BC67335B1A5D90C700C6D79B /* MagnetSensor.h */,
 				BC67335C1A5D90C700C6D79B /* MagnetSensor.mm */,
+				35C7100A1A67805400C12485 /* SystemClock.h */,
+				35C710091A67805400C12485 /* SystemClock.mm */,
 			);
 			path = Sensors;
 			sourceTree = "<group>";
@@ -209,6 +217,8 @@
 		BC6733511A5D90C700C6D79B /* Internal */ = {
 			isa = PBXGroup;
 			children = (
+				35C710071A677F2500C12485 /* GyroBiasEstimator.h */,
+				35C710061A677F2500C12485 /* GyroBiasEstimator.mm */,
 				BC6733521A5D90C700C6D79B /* Matrix3x3d.h */,
 				BC6733531A5D90C700C6D79B /* Matrix3x3d.mm */,
 				BC6733541A5D90C700C6D79B /* OrientationEKF.h */,
@@ -369,6 +379,7 @@
 				BC6733611A5D90C700C6D79B /* CardboardDeviceParams.mm in Sources */,
 				BC6733631A5D90C700C6D79B /* Distortion.mm in Sources */,
 				BC67336A1A5D90C700C6D79B /* ScreenParams.mm in Sources */,
+				35C710081A677F2500C12485 /* GyroBiasEstimator.mm in Sources */,
 				BC6733661A5D90C700C6D79B /* EyeTransform.mm in Sources */,
 				BCD709701A64194700E78B84 /* GLCubeViewController.m in Sources */,
 				BC6733671A5D90C700C6D79B /* FieldOfView.mm in Sources */,
@@ -377,6 +388,7 @@
 				BC67336D1A5D90C700C6D79B /* OrientationEKF.mm in Sources */,
 				BC6733621A5D90C700C6D79B /* CardboardViewController.mm in Sources */,
 				BC6733701A5D90C700C6D79B /* MagnetSensor.mm in Sources */,
+				35C7100B1A67805400C12485 /* SystemClock.mm in Sources */,
 				BC763B371A66A1D100463823 /* DebugUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

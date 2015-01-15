@@ -28,6 +28,7 @@ public:
     static double dot(Vector3d *a, Vector3d *b);
     double length();
     bool sameValues(Vector3d *other);
+    static void add(Vector3d *a, Vector3d *b, Vector3d *result);
     static void sub(Vector3d *a, Vector3d *b, Vector3d *result);
     static void cross(Vector3d *a, Vector3d *b, Vector3d *result);
     static void ortho(Vector3d *v, Vector3d *result);
