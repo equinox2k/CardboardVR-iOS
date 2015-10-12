@@ -23,6 +23,8 @@
 
 @implementation GLCubeViewController
 
+@dynamic view;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
