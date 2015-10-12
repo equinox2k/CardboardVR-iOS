@@ -131,6 +131,8 @@
 
 @implementation CardboardViewController
 
+@dynamic view;
+
 - (id)init
 {
     self = [super init];

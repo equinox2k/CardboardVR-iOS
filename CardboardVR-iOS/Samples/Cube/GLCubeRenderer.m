@@ -153,7 +153,7 @@ enum
 
 - (void)updateProjectionMatrixAspectWithSize:(CGSize)size
 {
-    float aspect = fabsf(size.width /
+    float aspect = fabs(size.width /
                          size.height);
     _projectionMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(50.0f), aspect, 0.1f, 100.0f);
 }
